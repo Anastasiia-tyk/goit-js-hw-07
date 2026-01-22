@@ -30,6 +30,7 @@ img {
 
 button {
   cursor: pointer;
+  border: none;
 }
 
 ul {
@@ -121,3 +122,76 @@ ul {
   padding: 8px 16px;
 }
 
+.login-form {
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 408px;
+  height: 256px;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.input-text {
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+
+  padding: 8px 16px;
+
+  outline: transparent;
+}
+
+.input-text:hover {
+  border: 1px solid #000;
+}
+
+.input-text::placeholder{
+  opacity: 0;
+}
+
+input:focus::placeholder {
+  opacity: 1;
+}
+
+.btn-log {
+  display: block;
+  max-width:86px;
+  height: 40px;
+  border-radius: 8px;
+  padding: 8px 16px;
+
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-log:hover {
+  background: #6c8cff;
+}
